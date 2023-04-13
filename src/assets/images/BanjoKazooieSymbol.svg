@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) by Toomai Glittershine for SmashWiki -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+		height="256" width="256"
+		viewBox="0 0 256 256">
+	<metadata id="metadata7">
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<path id="mainsymbolpath" style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:none"
+		d="m 213.64692,213.64692 0,-60.58817 c -17.35185,16.14089 -45.6007,3.8344 -45.6007,-19.86173 0,-23.69609 28.24885,-36.002594 45.6007,-19.8617 l 0,-35.38153 -47.98281,0 c 16.14089,-17.351856 3.8344,-45.6007 -19.8617,-45.6007 -23.6961,0 -36.0026,28.248844 -19.86171,45.6007 l -47.986913,0 0,35.38153 c -17.351856,-16.140894 -45.600701,-3.83439 -45.600701,19.8617 0,23.69612 28.248845,36.00262 45.600701,19.86173 l 0,60.58817 47.986913,0 c -16.14089,-17.35185 -3.83439,-45.60069 19.86171,-45.60069 23.6961,0 36.00259,28.24883 19.8617,45.60069 z"
+	/>
+</svg>
