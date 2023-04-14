@@ -1,13 +1,35 @@
-video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
+.video-container {
+    width: 100vw;
+    height: 100vh;
+}
+      
+iframe {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+      /* height = 100 * (9 / 16) = 56.25 */
+      height: 56.25vw;
+    }
+}
+      
+@media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+      /* width = 100 / (9 / 16) = 177.777777 */
+      width: 177.78vh;
+    }
 }
 
 .hero-container {
-    /* height: 100vh; */
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,32 +39,43 @@ video {
     object-fit: contain;
 }
 
-.hero-container > h1 {
+.hero-text {
+    position: absolute;
+}
+
+.hero-text > h1 {
+    /* position: absolute; */
     color: #fff;
     padding-top: 29px;
     font-size: 100px;
+    text-align: center;
     z-index: 1;
 }
 
-.hero-container > p {
+.hero-text > p {
+    /* position: absolute; */
     color: #fff;
     font-size: 32px;
+    text-align: center;
     margin-top: 8px;
     z-index: 1;
 }
 
 @media screen and (max-width: 960px) {
-    .hero-container > h1 {
+    .hero-text > h1 {
         font-size: 70px;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .hero-container > h1 {
+    .hero-text > h1 {
         font-size: 50px;
+        text-align: center;
     }
 
-    .hero-container > p {
+    .hero-text > p {
         font-size: 30px;
+        text-align: center;
     }
 }
