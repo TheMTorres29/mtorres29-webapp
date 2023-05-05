@@ -25,22 +25,42 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
+  const scrollToHero = () => {
+    const aboutSection = document.getElementById("home");
+    aboutSection.scrollIntoView({behavior: 'smooth'});
+  }
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({behavior: 'smooth'});
+  };
+
+  const homeClickMe = () => {
+    closeMobileMenu();
+    scrollToHero();
+  }
+
+  const aboutClickMe = () => {
+    scrollToAbout();
+    closeMobileMenu();
+  }
+
   return (
     <>
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>MTorres29</Link>
+                <Link to="/" className="navbar-logo" onClick={homeClickMe}>MTorres29</Link>
                 <div className="menu-icon" onClick={handleClick}>
                   <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                   <li className="nav-item">
-                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='/' className='nav-links' onClick={homeClickMe}>
                       Home
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to='/' className='nav-links' onClick={aboutClickMe}>
                       About Me
                     </Link>
                   </li>

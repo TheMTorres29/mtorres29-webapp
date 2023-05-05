@@ -1,0 +1,194 @@
+.about-container {
+    width: 100% auto;
+    position: relative;
+    background-color: #080707;
+    padding-bottom: 12px;
+}
+
+.about-title {
+    padding-top: 3.5%;
+    font-size: 75px;
+    text-align: center;
+    color: white;
+}
+
+.about-description {
+    position: relative;
+    display: flex;
+    margin: 1%;
+    padding: 0.8%;
+    border-radius: 5px;
+    /* background-color: #395999; */
+    background: linear-gradient(180deg, #395999 0%, #2652ab 100%);
+    opacity: 95%;
+}
+
+.about-description > p {
+    color: white;
+}
+
+/* =====================Timeline CSS===================== */
+/* timeline container */
+.timeline {
+    position: relative;
+    margin: 2%;
+    padding: 0.8%;
+    border-radius: 5px;
+    /* background-color: #395999; */
+    background: linear-gradient(180deg, #395999 0%, #2652ab 100%);
+    opacity: 95%;
+}
+
+/* Timeline vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    border-radius: 35%;
+}
+
+.timeline-title {
+    position: relative;
+    color: white;
+    font-size: 65px;
+    text-align: center;
+}
+
+.timeline-list {
+    position: relative;
+    list-style-type: none;
+}
+
+.timeline-card {
+    position: relative;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 2% 0% 2% -2%;
+    border-radius: 5px;
+    width: 45%;
+}
+
+/* Circle on timeline */
+.timeline-card::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -7%;
+    background-color: white;
+    border: 4px solid darkgrey;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 5%;
+}
+  
+/* Place the container to the right */
+.right {
+    left: 54%;
+}
+  
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -6.6%;
+}
+
+.timeline-contents {
+    padding: 1%;
+}
+
+.timeline-card-date {
+    font-weight: 300;
+}
+
+@media screen and (max-width: 960px) {
+    .about-title {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .about-description {
+        margin: 3%;
+    }
+
+    .timeline {
+        margin: 3%;
+    }
+
+    .timeline > h1 {
+        font-size: 50px;
+    }
+
+    .timeline-card {
+        position: relative;
+        background-color: white;
+        padding: 10px 20px;
+        margin: 2% 0% 2% -2%;
+        border-radius: 5px;
+        width: 45%;
+    }
+
+    .timeline-card::after {
+        right: -9%;
+        width: 20px;
+        height: 20px;
+    }
+
+    .right::after {
+        left: -8%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-title {
+        font-size: 50px;
+        text-align: center;
+        padding-top: 13%;
+    }
+
+    .about-description > p {
+        margin: 2%;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .timeline > h1 {
+        font-size: 40px;
+    }
+
+    .timeline-card {
+        position: relative;
+        background-color: white;
+        padding: 10px 20px;
+        margin: 2% 0% 2% -2%;
+        border-radius: 5px;
+        width: 45%;
+    }
+
+    .timeline-card::after {
+        right: -11%;
+        width: 17px;
+        height: 17px;
+    }
+
+    .right::after {
+        left: -9%;
+    }
+
+    .timeline-contents {
+        padding: 1.5%;
+    }
+
+    .timeline-card-title {
+        font-size: 24px;
+    }
+
+}

@@ -1,0 +1,6 @@
+/* #242222 mobile menu bg
+   #1a1717 navbar bg
+   #080707 section bg
+   #395999 blue bg
+   #2652ab brighter blue
+*/
