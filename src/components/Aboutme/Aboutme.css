@@ -6,7 +6,7 @@
 }
 
 .about-title {
-    padding-top: 3.5%;
+    padding-top: 4.5%;
     font-size: 75px;
     text-align: center;
     color: white;
@@ -19,7 +19,7 @@
     padding: 0.8%;
     border-radius: 5px;
     /* background-color: #395999; */
-    background: linear-gradient(180deg, #395999 0%, #2652ab 100%);
+    background: linear-gradient(to top, #395999, #2652ab 100%);
     opacity: 95%;
 }
 
@@ -113,6 +113,7 @@
     .about-title {
         font-size: 70px;
         text-align: center;
+        padding-top: 6%;
     }
 
     .about-description {
@@ -156,12 +157,8 @@
 
     .about-description > p {
         margin: 2%;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 100;
-    }
-
-    .timeline > h1 {
-        font-size: 40px;
     }
 
     .timeline-card {
@@ -188,7 +185,7 @@
     }
 
     .timeline-card-title {
-        font-size: 24px;
+        font-size: 20px;
     }
 
 }

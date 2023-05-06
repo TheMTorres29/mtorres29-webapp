@@ -15,7 +15,7 @@ const selectedVideo = getRandVideo(videoLinks);
 function Hero() {
   return (
     <div className='hero-container' id='home'>
-        <div className='video-container'>
+        <div className='hero-video-container'>
           <iframe title="vimeo-player" src={selectedVideo} frameborder="0" className='hero-iframe'></iframe>
         </div>
         <div className='hero-text'>

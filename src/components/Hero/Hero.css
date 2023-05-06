@@ -1,11 +1,11 @@
-.video-container {
+.hero-video-container {
     width: 100vw;
     height: 100vh;
 }
       
-iframe {
-    position: relative;
-    top: 50%;
+.hero-iframe {
+    position: absolute;
+    top: 56.4%;
     left: 50%;
     width: 100vw;
     height: 100vh;
@@ -15,14 +15,14 @@ iframe {
 }
 
 @media (min-aspect-ratio: 16/9) {
-    .video-container iframe {
+    .hero-video-container > iframe {
       /* height = 100 * (9 / 16) = 56.25 */
       height: 56.25vw;
     }
 }
       
 @media (max-aspect-ratio: 16/9) {
-    .video-container iframe {
+    .hero-video-container > iframe {
       /* width = 100 / (9 / 16) = 177.777777 */
       width: 177.78vh;
     }
@@ -41,6 +41,7 @@ iframe {
 
 .hero-text {
     position: absolute;
+    z-index: 5;
 }
 
 .hero-text > h1 {
@@ -90,7 +91,7 @@ iframe {
         display: none;
     }
 
-    .video-container {
+    .hero-video-container {
         background-color: black;
         background-image: url("../../assets/images/InkyBanjoHero720.gif");
         background-repeat: no-repeat;

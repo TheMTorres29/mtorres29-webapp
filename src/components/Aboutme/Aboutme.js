@@ -9,16 +9,16 @@ function Aboutme() {
             <p>
               &emsp; Hello to who views this,
               As you probably saw from the Hero my name is Miguel Torres and I am just a guy studying some web development and playing Super Smash Bros Ultimate for the Nintendo Switch. <br />
-              &emsp; I started really getting into tech and computers around middle school. I remember the TV remote breaking after it fell off the table and seeing the board and wondering "How the hell does this work?".
-              What also peaked my interest was my Nintendo Wii at the time. Homebrew was new and people were gaining access to different mods and really taking the console to the next level.<br />
-              I began modding a lot of my game consoles from opening them up and putting them back together to swap the shell to be a different color, to getting some cool music or texture packs running in my game.
-              It was all so cool an is something that still peaks my interest to this day. I began to study Computer Science in college because I wanted to learn how a computer works and what is all this "coding" I see and hear about.<br />
-              &emsp; The subject really did grow on me and I love learning new things about computer programming. After graduating I am still learning and teaching myself new skills to prepare myself for a career in the field.
+              &emsp; I started really getting into tech and computers around middle school. I remember the TV remote breaking after it fell off the table and seeing the board and wondering "How does this even work?".
+              What also peaked my interest was my Nintendo Wii at the time. Homebrew was new and people were gaining access to different mods and really taking the console to the next level and I wanted to learn more!<br />
+              &emsp; I began modding a lot of my game consoles by opening them up and putting them back together to swap the shell to be a different color, getting some cool music or texture packs running in my game.
+              It was all so cool and is something that still peaks my interest to this day. I began to study Computer Science in college because I wanted to learn how a computer works and what all of this "coding" I see and hear is about.<br />
+              &emsp; The subject really did grow on me and I love learning new things about computer programming. After graduating I am still learning and teaching myself new skills to prepare myself for a career in the tech field.
               I have worked with a lot of hardware coming from a background of building my own arcade stick for fighting games, tinkering with game consoles and working with huge printers at Zumiez; however the software side is really
-              what I WANT to learn more about.<br />
+              what I WANT to learn more about for now.<br />
               &emsp; This project is here to serve as Web Development practice. I bought the domain and now I have this hub of any work I am up to.
-              I plan on posting and updating this site when I find the time between work and gaming. I currently work full-time and play Smash as a hobby right now.
-              I also plan on posting some Smash related content here when I can just to practice web dev stuff as well.
+              I plan on posting and updating this site when I find the time between work, life, and hobbies.
+              I also plan on posting some Smash related content here when I can just to practice web dev stuff as well so stay tuned!
             </p>
         </div>
         <h1 className='timeline-title'>Timeline</h1>
