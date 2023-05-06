@@ -9,7 +9,7 @@ function Smashvods() {
         <div className="vod-container">
             <h1 className="video-title">GLS Jabroni Jamboree 3: MTorres29 (Banjo) vs Piston (Roy) LQF</h1>
             <div className="video-container">
-                <iframe className='yt-video-iframe' width="560" height="315" src="https://www.youtube.com/embed/LZ7Mau5IaOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className='yt-video-iframe' width="560" height="315" src="https://www.youtube.com/embed/SNRI8HDgPD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
 
