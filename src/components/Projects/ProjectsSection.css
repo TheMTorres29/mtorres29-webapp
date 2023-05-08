@@ -1,0 +1,12 @@
+.projects-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #080707;
+}
+
+.projectsection-title {
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+}

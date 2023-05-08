@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' exact Component={Home} />
           <Route path='/smash-bros' exact Component={Smash} />
-          <Route path='/' exact Component={Projects} />
+          <Route path='/projects' exact Component={Projects} />
         </Routes>
       </Router>
       

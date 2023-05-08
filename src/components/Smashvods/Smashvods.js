@@ -28,7 +28,7 @@ function Smashvods() {
         </div>
         
         <div className="vod-container">
-            <h1 className="video-title">JV3 2022 Crew Battle: Los Lecheros vs SuperJellyNovaGang</h1>
+            <h1 className="video-title">JV3 2022 Crew Battle: Los Lecheros vs Super Jelly Nova Gang</h1>
             <div className="video-container">
                 <iframe className='yt-video-iframe' width="560" height="315" src="https://www.youtube.com/embed/dIGwlR1oERA" title="JV3 2022 Crew battle Los Lecheros vs SuperJellyNovaGang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
