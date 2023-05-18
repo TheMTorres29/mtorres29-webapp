@@ -25,11 +25,6 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
-  const scrollToHero = () => {
-    const aboutSection = document.getElementById("home");
-    aboutSection.scrollIntoView({behavior: 'smooth'});
-  }
-
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
     aboutSection.scrollIntoView({behavior: 'smooth'});
@@ -37,7 +32,6 @@ function Navbar() {
 
   const homeClickMe = () => {
     closeMobileMenu();
-    scrollToHero();
   }
 
   const aboutClickMe = () => {

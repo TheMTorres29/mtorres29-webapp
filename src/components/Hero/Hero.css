@@ -83,8 +83,8 @@
     .hero-text > p {
         font-size: 29px;
         text-align: center;
+        padding: 0% 2%;
         -webkit-text-stroke: 0;
-
     }
 
     .hero-iframe {

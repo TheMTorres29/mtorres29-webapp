@@ -14,10 +14,10 @@
 
 .vod-container {
   position: relative;
-  padding: 1% 5% 2%;
+  padding: 1% 1.5% 1.2%;
   background: linear-gradient(180deg, #2652ab 0%, #395999 100%);
   border-radius: 5px;
-  margin: 2% 6%;
+  margin: 2% 8%;
   opacity: 85%;
 }
 
@@ -46,26 +46,16 @@
 }
 
 
-/* .video-iframe {
-	position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
-
 @media screen and (max-width: 768px) {
   .smashvod-title {
-    font-size: 56px;
+    font-size: 40px;
   }
 
   .video-title {
-    font-size: 29px;
+    font-size: 22px;
   }
 
   .vod-container {
-    margin: 0% 5% 4%;
-
+    margin: 0% 8% 4%;
   }
 }
