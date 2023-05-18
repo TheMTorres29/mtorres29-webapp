@@ -1,6 +1,8 @@
 .about-container {
     width: 100% auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: #080707;
     padding-bottom: 12px;
 }
@@ -15,12 +17,13 @@
 .about-description {
     position: relative;
     display: flex;
+    max-width: 90%;
     margin: 1%;
     padding: 0.8%;
     border-radius: 5px;
-    /* background-color: #395999; */
     background: linear-gradient(to top, #395999, #2652ab 100%);
     opacity: 95%;
+    align-self: center;
 }
 
 .about-description > p {
@@ -31,10 +34,10 @@
 /* timeline container */
 .timeline {
     position: relative;
-    margin: 2%;
+    max-width: 80%;
+    align-self: center;
     padding: 0.8%;
     border-radius: 5px;
-    /* background-color: #395999; */
     background: linear-gradient(180deg, #395999 0%, #2652ab 100%);
     opacity: 95%;
 }
@@ -122,6 +125,7 @@
 
     .timeline {
         margin: 3%;
+        max-width: 85%;
     }
 
     .timeline > h1 {
@@ -159,6 +163,10 @@
         margin: 2%;
         font-size: 18px;
         font-weight: 100;
+    }
+
+    .timeline {
+        max-width: 90%;
     }
 
     .timeline-card {

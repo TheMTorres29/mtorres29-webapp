@@ -5,7 +5,7 @@ function ProjectsSection() {
   return (
     <div className='projects-container'>
         <h1 className="projectsection-title">Projects Section</h1>
-        <p className="projectsection-desc">[ WIP ]</p>
+        <p className="projectsection-desc">[ WIP ] Coming Soon</p>
     </div>
   )
 }
