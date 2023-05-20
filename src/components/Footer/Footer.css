@@ -38,6 +38,7 @@ footer.link {
 .footer-item a {
     display: flex;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .footer-item a:visited {
@@ -47,9 +48,8 @@ footer.link {
 }
 
 .footer-item a:hover {
-    color: #fff;
+    opacity: 78%;
     text-decoration: none;
-    border-bottom: 2px solid #fff;
     transition: all 0.2s ease-out;
 }
 
@@ -63,10 +63,33 @@ footer.link {
     text-decoration: none;
 }
 
+.footer-contact-btn {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    width: 100% 100%;
+}
+
+.footer-contact-btn:hover {
+    opacity: 78%; 
+}
+
+.footer-contact-btn h4 {
+    font-size: larger;
+    padding-top: 0.4%;
+
+}
+
 .footer-item h4 {
+    width: 130px;
     font-weight: 300;
-    padding-top: 0.5%;
+    padding-top: 0.4%;
     padding-right: 6px;
+    padding-left: 2px;
+    margin-top: 2px;
 }
 
 .footer-icon {
@@ -86,7 +109,7 @@ footer.link {
     .col {
         width: 80%;
         align-self: center;
-        padding: 1%;
+        padding: 0.2%;
     }
 
     .footer-list {
@@ -103,7 +126,7 @@ footer.link {
     .footer-item {
         align-self: center;
         display: inline-block;
-        padding: 2% 8%;
+        padding: 1% 8%;
     }
 
     .footer-item a {

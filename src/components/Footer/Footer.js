@@ -1,12 +1,12 @@
-import React from 'react';
+import { React } from 'react';
 import './Footer.css';
 import envelopeIcon from '../../assets/images/envelope-solid.svg';
 import twitchIcon from '../../assets/images/twitch.svg';
 import twitterIcon from '../../assets/images/square-twitter.svg';
 import linkedinIcon from '../../assets/images/linkedin.svg';
 
+function Footer({setIsModalOpen}) {
 
-function Footer() {
   return (
     <div className='footer-container'>
         <div className="row">
@@ -18,8 +18,10 @@ function Footer() {
                         <h4>created by: Miguel Torres</h4>
                     </li>
                     <li className="footer-item">
-                        <h4>Contact Me</h4>
-                        <img src={envelopeIcon} alt="logo-icon" className="footer-icon" />
+                        <button className='footer-contact-btn' onClick={() => {setIsModalOpen(true);}}>
+                            <h4>Contact Me</h4>
+                            <img src={envelopeIcon} alt="logo-icon" className="footer-icon" />
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -28,7 +30,6 @@ function Footer() {
             <div className="col">
                 <h4 className="footer-title">Links</h4>
                 <ul className="footer-list">
-                    
                     <li className="footer-item">
                         <a href="https://www.linkedin.com/in/mtorres29/">
                             <h4>Linkedin</h4>

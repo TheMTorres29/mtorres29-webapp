@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { React, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button/Button';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({setIsModalOpen}) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -68,7 +68,7 @@ function Navbar() {
                       Smash Bros
                     </Link>
                   </li>
-                  {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+                  {button && <Button buttonStyle='btn--outline' onClick={() => setIsModalOpen(true)}>Contact</Button>}
                 </ul>
             </div>
         </nav>
