@@ -132,4 +132,10 @@ footer.link {
     .footer-item a {
         padding-top: 1.2%;
     }
+
+    .footer-contact-btn h4 {
+        font-size: larger;
+        padding-top: 0.7%;
+    
+    }
 }

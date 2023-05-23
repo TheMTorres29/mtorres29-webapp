@@ -4,7 +4,6 @@
     position: absolute;
     display: flex;
     z-index: 99;
-    align-content: center;
 }
 
 .outer-modal {
@@ -18,12 +17,13 @@
 
 .inner-modal {
     position: fixed;
-    margin: 5%;
-    width: 90%;
-    height: 75vh;
+    display: flex;
+    width: 80%;
     opacity: 100%;
     background-color: #395999;
-    align-self: center;
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 10%;
 }
 
 .inner-modal h2{
@@ -33,14 +33,18 @@
 }
 
 .close-modal {
-    margin: 1%;
-    position: fixed;
-    right: 6.2%;
-    cursor: pointer;
-    color: #fff;
+    position: absolute;
     background: none;
-    border: none;
-    font-weight: 1000;
+    color: #fff;
+    border: #fff solid 2px;
+    padding: 0.3%;
+    margin: 1%;
+    right: 6px;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    opacity: 75%;
 }
 
 .contact-modal-title {
@@ -51,21 +55,52 @@
 
 .contact-form {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1%;
+    margin: 2%;
 }
 
 .form-container {
     position: relative;
+    display: flex;
     padding: 0.2%;
-    flex-direction: column;
+}
+
+.form-title {
+    position: relative;
+    display: flex;
+    width: 25%;
 }
 
 .form-control {
     position: relative;
     display: flex;
-    width: 100% auto;
+    width: 75%;
+}
 
+.contact-send-btn {
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background: none;
+    border: #fff solid 3px;
+    border-radius: 5px;
+    padding: 0.5%;
+    margin: 1.5% auto 0%;
+    cursor: pointer;
+}
+
+.contact-send-btn:hover {
+    opacity: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    .form-title {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .form-title {
+        font-size: large;
+    }
 }
