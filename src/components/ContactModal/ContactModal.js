@@ -37,7 +37,7 @@ function ContactModal({ setIsModalOpen }) {
                     </div>
                     <div className="form-container">
                         <h2 className="form-title">Message</h2>
-                        <textarea className="form-control" id="" cols="30" rows="10" placeholder="Your message..." name="message" required></textarea>
+                        <textarea className="form-control" cols="30" rows="10" placeholder="Your message..." name="message" required></textarea>
                     </div>
                     <div className="form-container">
                         <button type="submit" className="contact-send-btn">Send Message</button>

@@ -94,13 +94,37 @@
 }
 
 @media screen and (max-width: 768px) {
+    .contact-form {
+        margin: 2% 5%;
+    }
+
     .form-title {
         text-align: left;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-title {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .contact-send-btn {
+        padding: 2%;
     }
 }
 
 @media screen and (max-width: 960px) {
     .form-title {
-        font-size: large;
+        font-size: medium;
+    }
+
+    .contact-send-btn {
+        padding: 2%;
     }
 }
