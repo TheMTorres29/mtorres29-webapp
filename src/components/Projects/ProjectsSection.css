@@ -16,3 +16,16 @@
     padding-top: 2%;
     text-align: center;
 }
+
+.git-link {
+    position: relative;
+    /* display: block; */
+}
+
+.git-logo {
+    position: relative;
+    display: block;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}

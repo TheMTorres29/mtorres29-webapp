@@ -4,6 +4,8 @@ import envelopeIcon from '../../assets/images/envelope-solid.svg';
 import twitchIcon from '../../assets/images/twitch.svg';
 import twitterIcon from '../../assets/images/square-twitter.svg';
 import linkedinIcon from '../../assets/images/linkedin.svg';
+import gitIcon from '../../assets/images/github-mark.svg';
+
 
 function Footer({setIsModalOpen}) {
 
@@ -34,6 +36,12 @@ function Footer({setIsModalOpen}) {
                         <a href="https://www.linkedin.com/in/mtorres29/">
                             <h4>Linkedin</h4>
                             <img src={linkedinIcon} alt="logo-icon" className="footer-icon" />
+                        </a>
+                    </li>
+                    <li className='footer-item'>
+                        <a href="https://github.com/TheMTorres29">
+                            <h4>GitHub</h4>
+                            <img src={gitIcon} alt="logo-icon" className="footer-icon" />
                         </a>
                     </li>
                 </ul>
