@@ -137,7 +137,7 @@ footer.link {
         font-size: larger;
         padding: 2%;
         margin-right: 5px;
-        border: #fff solid 2px;
+        /* border: #fff solid 2px; */
         border-radius: 5px;
     }
 }
