@@ -56,12 +56,16 @@
 
 .stage-img {
     position: relative;
-    height: auto;
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
     margin: 0% 2%;
     filter: invert(10%) brightness(1000%);
 
 }
 
-/* .stage-img:hover {
-    scale: 1.2;
-} */
+@media screen and (max-width: 768px) {
+    .image-card:hover {
+        scale: 1.02;
+    }
+}
