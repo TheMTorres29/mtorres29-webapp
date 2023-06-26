@@ -17,7 +17,7 @@ function Smashvods() {
     );
 
     const showVideo = (videoId, title) => {
-        let videoUrl = `https://www.youtube.com/embed/${videoId}?rel=0`
+        let videoUrl = `https://www.youtube.com/embed/${videoId}?rel=0`;
         videoPlayer.setAttribute("src", videoUrl);
         videoTitle.innerHTML = title;
     };
@@ -25,6 +25,7 @@ function Smashvods() {
     videoThumbnails.forEach((v) => {
         v.addEventListener("click", () => {
             showVideo(v.dataset.id, v.dataset.title);
+            console.log("clicked test");
         });
     });
 

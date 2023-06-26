@@ -4,12 +4,12 @@
 }
 
 .row {
-    padding: 2.9px;
+    padding: 2px;
     display: flex;
 }
 
 .col {
-    padding: 1.2% 0% 1% 7%;
+    padding: 1.2% 0% 0% 7%;
     width: 33.33%;
 }
 
