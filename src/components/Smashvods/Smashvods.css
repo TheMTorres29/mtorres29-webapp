@@ -1,8 +1,11 @@
 .smashvods-container {
   position: relative;
   width: 100vw;
+  margin: 0 auto;
+  padding: 1%;
   padding-bottom: 2%;
   background-color: #080707;
+  box-sizing: border-box;
 }
 
 .smashvod-title {
@@ -12,16 +15,15 @@
   font-size: 64px;
 }
 
-.vod-container {
-  position: relative;
-  padding: 1% 1.5% 1.2%;
-  background: linear-gradient(180deg, #2652ab 0%, #395999 100%);
+.yt-gallery-container {
+  padding: 1%;
+  margin: 0% 9%;
+  justify-content: center;
   border-radius: 5px;
-  margin: 2% 8%;
-  opacity: 85%;
+  background-color: #395999;
 }
 
-.video-container {
+.yt-video {
   position: relative; 
   padding-bottom: 56.25%; 
   padding-top: 30px; 
@@ -37,25 +39,50 @@
   height: 100%; 
 }
 
-.video-title {
-  position: relative;
+.yt-title {
   color: #fff;
   text-align: center;
-  z-index: 2;
-  margin-bottom: 1%;
+  font-weight: 500;
+  line-height: 29px;
 }
 
+.yt-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+  padding: 1%;
+}
+
+.yt-thumbnail {
+  width: auto;
+  height: 120px;
+  cursor: pointer;
+}
+
+.gallery-item:hover .play-icon {
+  opacity: 1;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: opacity 400ms ease;
+}
+
+.play-icon-img {
+  width: 50px;
+}
 
 @media screen and (max-width: 768px) {
-  .smashvod-title {
-    font-size: 40px;
-  }
-
-  .video-title {
-    font-size: 22px;
-  }
-
-  .vod-container {
-    margin: 0% 8% 4%;
+  .yt-thumbnail {
+    height: 100px;
   }
 }

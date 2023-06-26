@@ -12,40 +12,49 @@
 }
 
 #collapsable-head {
-    display: hidden;
+    position: absolute;
+    left:-10%;
 }
 
 .collapsable-content {
-    max-height: 1px;
+    height: 0px;
     overflow: hidden;
     border-radius: 4px;
     line-height: 1.4;
     position: relative;
     top: -100%;
     opacity: 0;
-    transition: all 0.6s ease;
+    transition: all 500ms ease-in-out;
+    z-index: 1;
 }
 
 .collapsable input:checked ~ .collapsable-content {
-    max-height: 100%;
+    height: 100%;
     padding-bottom: 29px;
     opacity: 1;
     top: 0;
 }
 
 .smashstages-title {
-    padding: 2%;
+    padding: 1%;
+    margin: 0 3% 0 3%;
     max-width: 100%;
     color: #fff;
-    background-color: #395999;
+    background: linear-gradient(180deg, #2652ab 0%, #395999 100%);;
     text-align: left;
     box-shadow: 0 5px 12px 5px #1a1717, 0 2px 8px 0 #fff;
     border-radius: 5px;
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
-    font-size:xx-large;
+    font-size:49px;
     font-weight: 900;
+    text-align: center;
+}
+
+.smashstages-title:hover {
+    background: linear-gradient(180deg, #2652ab 0%, #2652ab 100%);
+    transition: all 400ms ease;
 }
 
 .smashstages-container p {
@@ -101,6 +110,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .smashstages-title {
+        font-size:29px;
+    }
+
     .image-card:hover {
         scale: 1.02;
     }

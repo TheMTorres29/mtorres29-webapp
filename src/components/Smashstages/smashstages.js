@@ -24,7 +24,7 @@ function smashstages() {
     <div className='smashstages-container'>
         <div className="collapsable">
             <input type="checkbox" id="collapsable-head" />
-            <label for="collapsable-head" className="smashstages-title">Competitive Stages</label>
+            <label for="collapsable-head" className="smashstages-title">&#8681; Competitive Stages &#8681;</label>
             <div className="collapsable-content">
                 <p>Here are some blastzone visualizations for some Competitive stages <br />
                 Characters usually have preferences because certain stages blastzones help them get KOs quicker at lower %s <br />
