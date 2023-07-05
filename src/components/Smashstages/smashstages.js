@@ -15,16 +15,11 @@ import ys from '../../assets/images/stages/ys.png';
 
 function smashstages() {
 
-    const enlargeImg = () => {
-        
-        console.log("logged");
-    }
-
   return (
     <div className='smashstages-container'>
         <div className="collapsable">
             <input type="checkbox" id="collapsable-head" />
-            <label for="collapsable-head" className="smashstages-title">&#8681; Competitive Stages &#8681;</label>
+            <label for="collapsable-head" className="smashstages-title">Competitive Stages</label>
             <div className="collapsable-content">
                 <p>Here are some blastzone visualizations for some Competitive stages <br />
                 Characters usually have preferences because certain stages blastzones help them get KOs quicker at lower %s <br />
@@ -34,50 +29,54 @@ function smashstages() {
                     <h2>&lt; tournameta &gt;</h2>
                 </a>
                 <div className="stageimgs-container">
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Battlefield</h3>
-                        <img src={ bf } alt="smash-stage-img" className="stage-img" />
+                        <img src={ bf } alt="smash-stage-img" className="stage-img" id='myimg'/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Small Battlefield</h3>
-                        <img src={ sbf } alt="smash-stage-img" className="stage-img" />
+                        <img src={ sbf } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Final Destination</h3>
-                        <img src={ fd } alt="smash-stage-img" className="stage-img" />
+                        <img src={ fd } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Pokemon Stadium 2</h3>
-                        <img src={ ps2 } alt="smash-stage-img" className="stage-img" />
+                        <img src={ ps2 } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Smashville</h3>
-                        <img src={ sv } alt="smash-stage-img" className="stage-img" />
+                        <img src={ sv } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Town and City</h3>
-                        <img src={ tc } alt="smash-stage-img" className="stage-img" />
+                        <img src={ tc } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Kalos Pokemon League</h3>
-                        <img src={ k } alt="smash-stage-img" className="stage-img" />
+                        <img src={ k } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Hollow Bastion</h3>
-                        <img src={ hb } alt="smash-stage-img" className="stage-img" />
+                        <img src={ hb } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Northern Cave</h3>
-                        <img src={ nc } alt="smash-stage-img" className="stage-img" />
+                        <img src={ nc } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Lylat Cruise</h3>
-                        <img src={ lc } alt="smash-stage-img" className="stage-img" />
+                        <img src={ lc } alt="smash-stage-img" className="stage-img"/>
                     </div>
-                    <div className="image-card" onClick={ enlargeImg } >
+                    <div className="image-card" >
                         <h3 className='smash-stage-title'>Yoshi's Story</h3>
-                        <img src={ ys } alt="smash-stage-img" className="stage-img" />
+                        <img src={ ys } alt="smash-stage-img" className="stage-img"/>
                     </div>
+                </div>
+                <div className="popup-img-container" id='img-modal'>
+                    <span className='close'>&times;</span>
+                    <img src={''} alt="popup-img" className='popup-img' id='img01'/>
                 </div>
             </div>
         </div>
