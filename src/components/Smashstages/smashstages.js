@@ -9,15 +9,15 @@ import tc from '../../assets/images/stages/tc.png';
 import k from '../../assets/images/stages/k.png';
 import hb from '../../assets/images/stages/hb.png';
 import nc from '../../assets/images/stages/nc.png';
-import bfi from '../../assets/images/stages/icons/BattlefieldIconSSBU.webp';
-import sbfi from '../../assets/images/stages/icons/SmallBattlefieldIconSSBU.webp';
-import fdi from '../../assets/images/stages/icons/FinalDestinationIconSSBU.webp';
-import ps2i from '../../assets/images/stages/icons/PokemonStadium2IconSSBU.webp';
-import svi from '../../assets/images/stages/icons/SmashvilleIconSSBU.webp';
-import tci from '../../assets/images/stages/icons/TownandCityIconSSBU.webp';
-import ki from '../../assets/images/stages/icons/KalosPokemonLeagueIconSSBU.webp';
-import hbi from '../../assets/images/stages/icons/HollowBastionIconSSBU.webp';
-import nci from '../../assets/images/stages/icons/NorthernCaveIconSSBU.webp';
+import bfi from '../../assets/images/stages/icons/BattlefieldIconSSBU.png';
+import sbfi from '../../assets/images/stages/icons/SmallBattlefieldIconSSBU.png';
+import fdi from '../../assets/images/stages/icons/FinalDestinationIconSSBU.png';
+import ps2i from '../../assets/images/stages/icons/PokemonStadium2IconSSBU.png';
+import svi from '../../assets/images/stages/icons/SmashvilleIconSSBU.png';
+import tci from '../../assets/images/stages/icons/TownandCityIconSSBU.png';
+import ki from '../../assets/images/stages/icons/KalosPokemonLeagueIconSSBU.png';
+import hbi from '../../assets/images/stages/icons/HollowBastionIconSSBU.png';
+import nci from '../../assets/images/stages/icons/NorthernCaveIconSSBU.png';
 
 function Smashstages() {
     const galleryStageImgs = [
