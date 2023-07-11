@@ -45,24 +45,35 @@
 }
 
 .hero-text > h1 {
-    /* position: absolute; */
-    color: #fff;
+    color: #1a1717;
     padding-top: 29px;
     font-size: 100px;
     text-align: center;
     z-index: 1;
     -webkit-text-stroke: 0;
+    animation: movedown 2s linear forwards;
+
 }
 
 .hero-text > p {
-    /* position: absolute; */
-    color: #fff;
+    color: #1a1717;
     font-size: 32px;
     text-align: center;
     margin-top: 8px;
     z-index: 1;
     -webkit-text-stroke: 0;
+    animation: movedown 2s linear forwards;
 
+}
+@keyframes movedown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -74,14 +85,17 @@
 
 @media screen and (max-width: 768px) {
     .hero-text > h1 {
+        padding-top: 49%;
         margin: 1%;
         font-size: 50px;
+        color: #fff;
         text-align: center;
         -webkit-text-stroke-width: 0;
     }
 
     .hero-text > p {
         font-size: 29px;
+        color: #fff;
         text-align: center;
         padding: 0% 2%;
         -webkit-text-stroke: 0;
@@ -93,7 +107,7 @@
 
     .hero-video-container {
         background-color: black;
-        background-image: url("../../assets/images/InkyBanjoHero720.gif");
+        background-image: url("../../assets/images/fdbg.gif");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

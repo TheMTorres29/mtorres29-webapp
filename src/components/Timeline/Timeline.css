@@ -86,8 +86,19 @@
     font-size: 15px;
 }
 
-.timeline-contents h3 {
-    font-weight: 300;
+.timeline-item-title {
+    color: #000;
+    font-weight: 600;
+}
+
+.timeline-item-date {
+    color: #000;
+    font-weight: 500;
+}
+
+.timeline-item-desc {
+    color: #000;
+    font-weight: 500;
 }
 
 .left-container {

@@ -1,6 +1,7 @@
 .smashstages-container {
     position: relative;
     width: 100vw;
+    height:100%;
     padding-bottom: 2%;
     background-color: #080707;
     padding: 1%;
@@ -40,20 +41,21 @@
     margin: 0 3% 0 3%;
     max-width: 100%;
     color: #fff;
-    background: linear-gradient(180deg, #2652ab 0%, #395999 100%);;
-    text-align: left;
+    border: 3px solid #fff;
     box-shadow: 0 5px 12px 5px #1a1717, 0 2px 8px 0 #fff;
     border-radius: 5px;
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
-    font-size:49px;
+    font-size: 49px;
     font-weight: 900;
     text-align: center;
 }
 
 .smashstages-title:hover {
-    background: linear-gradient(180deg, #2652ab 0%, #2652ab 100%);
+    color: #080707;
+    background: #fff;
+    opacity: 95%;
     transition: all 400ms ease;
 }
 
@@ -68,88 +70,76 @@
     text-align: center;
 }
 
+
+/* Stage Image Gallery */
 .stageimgs-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
+    padding: 2% 5%;
 }
 
-.image-card {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.gallery-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.stageimg-item {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.stageimg-img {
+    width: 100%;
+}
+
+.stageimg-img:hover {
+    outline: #fff solid 1px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.main-gallery {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2px;
+    border: #fff solid 2px;
+    margin: 1%;
 }
 
-.image-card:hover {
-    border: #fff solid 1px;
-    border-radius: 4px;
-    cursor: pointer;
-    scale: 1.05;
-}
-
-.smash-stage-title {
-    width: auto;
+.main-gallery-title {
     color: #fff;
-    padding: 2% 0% 3%;
+    font-size: 29px;
     text-align: center;
-    z-index: 2;
+    margin-top: 1%;
 }
 
-.stage-img {
-    position: relative;
-    max-width:100%;
-    max-height:100%;
-    object-fit: contain;
-    margin: 0% 2%;
-    filter: invert(10%) brightness(1000%);
-
-}
-
-.popup-img-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #1a1717;
+.main-gallery-image {
+    max-width: 900px;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    margin: 0 auto;
 }
 
-.popup-img-container span {
-    position: absolute;
-    top: 5%;
-    right: 2%;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #fff;
-    cursor: pointer;
-    z-index: 6;
-}
 
-.popup-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 900px;
-    object-fit: cover;
+@media screen and (max-width: 960px) {
+    
 }
 
 @media screen and (max-width: 768px) {
     .smashstages-title {
-        font-size:29px;
+        font-size: 29px;
     }
 
-    .image-card:hover {
-        scale: 1.02;
+    .stageimg-item {
+        width: 80px;
+        height: 80px;
     }
 
-    .popup-img img {
-        width: 95%;
+    .main-gallery-title {
+        font-size: 100%;
     }
 }

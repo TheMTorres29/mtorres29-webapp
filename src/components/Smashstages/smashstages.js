@@ -1,5 +1,5 @@
-import React from 'react';
-import './smashstages.css'
+import React, { useState } from 'react';
+import './smashstages.css';
 import bf from '../../assets/images/stages/bf.png';
 import sbf from '../../assets/images/stages/sbf.png';
 import fd from '../../assets/images/stages/fd.png';
@@ -9,11 +9,71 @@ import tc from '../../assets/images/stages/tc.png';
 import k from '../../assets/images/stages/k.png';
 import hb from '../../assets/images/stages/hb.png';
 import nc from '../../assets/images/stages/nc.png';
-import lc from '../../assets/images/stages/lc.png';
-import ys from '../../assets/images/stages/ys.png';
+import bfi from '../../assets/images/stages/icons/BattlefieldIconSSBU.webp';
+import sbfi from '../../assets/images/stages/icons/SmallBattlefieldIconSSBU.webp';
+import fdi from '../../assets/images/stages/icons/FinalDestinationIconSSBU.webp';
+import ps2i from '../../assets/images/stages/icons/PokemonStadium2IconSSBU.webp';
+import svi from '../../assets/images/stages/icons/SmashvilleIconSSBU.webp';
+import tci from '../../assets/images/stages/icons/TownandCityIconSSBU.webp';
+import ki from '../../assets/images/stages/icons/KalosPokemonLeagueIconSSBU.webp';
+import hbi from '../../assets/images/stages/icons/HollowBastionIconSSBU.webp';
+import nci from '../../assets/images/stages/icons/NorthernCaveIconSSBU.webp';
 
+function Smashstages() {
+    const galleryStageImgs = [
+        {
+            icon: bfi,
+            img: bf,
+            title: "Battlefield"
+        },
+        {
+            icon: sbfi,
+            img: sbf,
+            title: "Small Battlefield"
+        },
+        {
+            icon: fdi,
+            img: fd,
+            title: "Final Destination"
+        },
+        {
+            icon: ps2i,
+            img: ps2,
+            title: "Pokemon Stadium 2"
+        },
+        {
+            icon: svi,
+            img: sv,
+            title: "Smashville"
+        },
+        {
+            icon: tci,
+            img: tc,
+            title: "Town and City"
+        },
+        {
+            icon: ki,
+            img: k,
+            title: "Kalos Pokemon League"
+        },
+        {
+            icon: hbi,
+            img: hb,
+            title: "Hollow Bastion"
+        },
+        {
+            icon: nci,
+            img: nc,
+            title: "Northern Cave"
+        },
+    ]
 
-function smashstages() {
+    const [galleryData, setGalleryData] = useState(galleryStageImgs[0]);
+    const handleClick=(index)=> {
+        // console.log(index);
+        const gallery=galleryStageImgs[index];
+        setGalleryData(gallery);
+    };
 
   return (
     <div className='smashstages-container'>
@@ -28,55 +88,22 @@ function smashstages() {
                 <a href="https://tournameta.com/stage-comparison/" className="tsc-reference">
                     <h2>&lt; tournameta &gt;</h2>
                 </a>
+
                 <div className="stageimgs-container">
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Battlefield</h3>
-                        <img src={ bf } alt="smash-stage-img" className="stage-img" id='myimg'/>
+                    <div className="main-gallery">
+                        <h2 className="main-gallery-title">{galleryData.title}</h2>
+                        <img className="main-gallery-image" src={galleryData.img} />
                     </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Small Battlefield</h3>
-                        <img src={ sbf } alt="smash-stage-img" className="stage-img"/>
+                    <div className="gallery-icons">
+                        {
+                            galleryStageImgs.map((data,i) => 
+                            <>
+                                <div className="stageimg-item">
+                                    <img className="stageimg-img" src={data.icon} onClick={()=>handleClick(i)} />
+                                </div>
+                            </>)
+                        }
                     </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Final Destination</h3>
-                        <img src={ fd } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Pokemon Stadium 2</h3>
-                        <img src={ ps2 } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Smashville</h3>
-                        <img src={ sv } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Town and City</h3>
-                        <img src={ tc } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Kalos Pokemon League</h3>
-                        <img src={ k } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Hollow Bastion</h3>
-                        <img src={ hb } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Northern Cave</h3>
-                        <img src={ nc } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Lylat Cruise</h3>
-                        <img src={ lc } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                    <div className="image-card" >
-                        <h3 className='smash-stage-title'>Yoshi's Story</h3>
-                        <img src={ ys } alt="smash-stage-img" className="stage-img"/>
-                    </div>
-                </div>
-                <div className="popup-img-container" id='img-modal'>
-                    <span className='close'>&times;</span>
-                    <img src={''} alt="popup-img" className='popup-img' id='img01'/>
                 </div>
             </div>
         </div>
@@ -84,4 +111,4 @@ function smashstages() {
   )
 }
 
-export default smashstages
+export default Smashstages
