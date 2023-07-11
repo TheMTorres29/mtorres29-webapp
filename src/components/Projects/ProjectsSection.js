@@ -4,6 +4,7 @@ import gitLogo from '../../assets/images/github-mark-white.svg';
 import mti from '../../assets/images/projects/MT29WebApp-Icon.png';
 import tpi from '../../assets/images/projects/TMAGame-Icon.png';
 import yti from '../../assets/images/projects/YTMP3-Icon.png';
+import fsi from '../../assets/images/projects/Fightstick-Icon.png'
 
 function ProjectsSection() {
   const projectGallery = [
@@ -26,7 +27,7 @@ function ProjectsSection() {
       desc: 'YouTube to MP3 Downloader I made using Python.',
     },
     {
-      icon: '',
+      icon: fsi,
       link: '',
       title: 'Custom Fightstick',
       desc: 'Custom universal fightstick I built to use when I play fighting games.',
