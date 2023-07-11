@@ -55,7 +55,7 @@ function Timeline() {
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Cal State University San Bernardino</h2>
                     <h3 className='timeline-item-date'>2018 - 2022</h3>
-                    <p className='timeline-item-desc'>Bachelor of Science in Computer Science w/ a cumulative GPA of 3.135</p>
+                    <p className='timeline-item-desc'>Bachelor of Science in Computer Science w/ a cumulative GPA of 3.14</p>
                     <span className="left-arrow"></span>
                 </div>
             </div>

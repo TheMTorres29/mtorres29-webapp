@@ -1,7 +1,7 @@
 .projects-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #080707;
 }
 
@@ -17,15 +17,101 @@
     text-align: center;
 }
 
+.git-container {
+    position: relative;
+    display: flex;
+    border: #fff solid 2px;
+    max-width: 250px;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1% auto;
+}
+
 .git-link {
     position: relative;
-    /* display: block; */
+    width: fit-content;
 }
 
 .git-logo {
     position: relative;
-    display: block;
     padding: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.git-desc {
+    padding: 2%;
+    font-size: 29px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Project Modules */
+.project-modules {
+    width: 100% auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.project-modules-item {
+    border-top: #fff solid 12px;
+    border-bottom: #fff solid 2px;
+    border-left: #fff solid 2px;
+    border-right: #fff solid 2px;
+    border-radius: 5px;
+    width: 30%;
+    padding: 2%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.proj-img-box {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+.proj-img {
+    width: 100%;
+    border: #fff solid 1px;
+    
+}
+
+.proj-title {
+ color: #fff;
+}
+
+.proj-desc {
+    color: #fff;
+    font-weight: 400;
+}
+
+.proj-link {
+    color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+    .project-modules-item {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectsection-title {
+        font-size: 49px;
+    }
+
+    .project-modules {
+        padding: 3%;
+        margin: 2%;
+    }
+
+    .project-modules-item {
+        width: 80%;
+    }
+
+    .proj-title {
+        font-weight: 500;
+    }
 }
