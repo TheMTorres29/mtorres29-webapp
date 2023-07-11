@@ -6,6 +6,7 @@ import tpi from '../../assets/images/projects/TMAGame-Icon.png';
 import yti from '../../assets/images/projects/YTMP3-Icon.png';
 import fsi from '../../assets/images/projects/Fightstick-Icon.png'
 
+
 function ProjectsSection() {
   const projectGallery = [
     {

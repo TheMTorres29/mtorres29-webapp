@@ -72,7 +72,7 @@ function Timeline() {
                 <img src={ z } alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Zumiez DTG</h2>
-                    <h3 className='timeline-item-date'>2022 - present</h3>
+                    <h3 className='timeline-item-date'>Oct 2022 - present</h3>
                     <p className='timeline-item-desc'>Operator/Technician</p>
                     <span className="left-arrow"></span>
                 </div>
