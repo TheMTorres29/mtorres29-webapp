@@ -62,8 +62,21 @@
     border-radius: 5px;
     width: 30%;
     padding: 2%;
+    animation: movedown 1.5s linear forwards;
+    opacity: 0;
+
     margin: 0 auto;
     margin-bottom: 10px;
+}
+@keyframes movedown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .proj-img-box {
@@ -113,5 +126,14 @@
 
     .proj-title {
         font-weight: 500;
+    }
+
+    .git-container {
+        max-width: 170px;
+    }
+
+    .git-desc {
+        font-size: 20px;
+        margin-top: 6px;
     }
 }
