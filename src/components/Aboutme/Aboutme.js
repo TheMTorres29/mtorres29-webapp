@@ -15,8 +15,9 @@ function Aboutme() {
               <br />
               &emsp; I’ve always played Smash Bros since the 64 casually with my friends and family but I recently started 
               going to local tournaments for Smash Ultimate. This is the first time I have really gotten into a video game 
-              competitively and I gotta say the experience is really fun and helps you learn a lot. I plan on sharing some 
-              Smash related info on this site just for fun so stay tuned!
+              competitively and I gotta say the experience is really fun and helps you learn a lot. Im proud to say I am 
+              one of the few Banjo mains in SoCal so I try to represent as much as I can lol I plan on sharing some Smash 
+              related info / guides on this site just for fun so stay tuned!
             </p>
         </div>
     </div>
