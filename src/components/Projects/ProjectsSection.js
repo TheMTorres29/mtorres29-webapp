@@ -4,7 +4,7 @@ import gitLogo from '../../assets/images/github-mark-white.svg';
 import mti from '../../assets/images/projects/MT29WebApp-Icon.png';
 import tpi from '../../assets/images/projects/TMAGame-Icon.png';
 import yti from '../../assets/images/projects/YTMP3-Icon.png';
-import fsi from '../../assets/images/projects/Fightstick-Icon.png';
+import fsi from '../../assets/images/projects/FS-Icon.png';
 
 
 function ProjectsSection() {
