@@ -51,7 +51,7 @@ function ProjectsSection() {
               <>
                 <div className="project-modules-item">
                   <div className="proj-img-box">
-                    <img className="proj-img" src={data.icon} />
+                    <img className="proj-img" src={data.icon} alt=''/>
                   </div>
                   <h2 className="proj-title">{data.title}</h2>
                   <a href={data.link} className="proj-link">Click Here</a>
