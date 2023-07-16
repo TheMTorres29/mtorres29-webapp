@@ -1,14 +1,14 @@
 import React from 'react';
 import './FightstickInfo.css';
-import fsimg1 from '../../assets/images/projects/stickpics/spagettiFR.JPG';
-import fsimg2 from '../../assets/images/projects/stickpics/spagettiBK.JPG';
-import fsimg3 from '../../assets/images/projects/stickpics/spagettiTP.JPG';
-import fsimg4 from '../../assets/images/projects/stickpics/spagettiTPBK.JPG';
-import fsimg5 from '../../assets/images/projects/stickpics/newFR.JPG';
-import fsimg6 from '../../assets/images/projects/stickpics/newBK.JPG';
+import fsimg1 from '../../assets/images/projects/stickpics/spagettiFR.jpg';
+import fsimg2 from '../../assets/images/projects/stickpics/spagettiBK.jpg';
+import fsimg3 from '../../assets/images/projects/stickpics/spagettiTP.jpg';
+import fsimg4 from '../../assets/images/projects/stickpics/spagettiTPBK.jpg';
+import fsimg5 from '../../assets/images/projects/stickpics/newFR.jpg';
+import fsimg6 from '../../assets/images/projects/stickpics/newBK.jpg';
 import fsimg7 from '../../assets/images/projects/stickpics/brookuboard.png';
-import fsimg8 from '../../assets/images/projects/stickpics/stickmanual.JPG';
-import fsimg9 from '../../assets/images/projects/stickpics/sticklayout.JPG';
+import fsimg8 from '../../assets/images/projects/stickpics/stickmanual.jpg';
+import fsimg9 from '../../assets/images/projects/stickpics/sticklayout.jpg';
 
 const FightstickInfo = () => {
   return (
