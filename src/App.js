@@ -8,6 +8,8 @@ import Projects from './pages/Projects';
 import Footer from './components/Footer/Footer';
 import Topbutton from './components/Topbutton/Topbutton';
 import ContactModal from './components/ContactModal/ContactModal';
+import FightstickInfo from './components/FightStickInfo/FightstickInfo.js';
+
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,6 +24,7 @@ function App() {
           <Route path='/' exact Component={Home} />
           <Route path='/smash-bros' exact Component={Smash} />
           <Route path='/projects' exact Component={Projects} />
+          <Route path='/projects/fightstick' exact Component={FightstickInfo} />
         </Routes>
       </Router>
       <Topbutton />

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ProjectsSection.css';
 import gitLogo from '../../assets/images/github-mark-white.svg';
+import { Link } from 'react-router-dom';
+import fightstickPage from '../../pages/Fightstick.js';
 import mti from '../../assets/images/projects/MT29WebApp-Icon.png';
 import tpi from '../../assets/images/projects/TMAGame-Icon.png';
 import yti from '../../assets/images/projects/YTMP3-Icon.png';
@@ -8,6 +10,7 @@ import fsi from '../../assets/images/projects/FS-Icon.png';
 
 
 function ProjectsSection() {
+
   const projectGallery = [
     {
       icon: mti,
@@ -29,7 +32,8 @@ function ProjectsSection() {
     },
     {
       icon: fsi,
-      link: '',
+      link: 'fightstick',
+      component: { fightstickPage },
       title: 'Custom Fightstick',
       desc: 'Custom universal fightstick I built to use when I play fighting games.',
     },
@@ -54,7 +58,7 @@ function ProjectsSection() {
                     <img className="proj-img" src={data.icon} alt=''/>
                   </div>
                   <h2 className="proj-title">{data.title}</h2>
-                  <a href={data.link} className="proj-link">Click Here</a>
+                  <Link to={data.link} component={data.component} className="proj-link">Click Here</Link>
                   <h3 className="proj-desc">{data.desc}</h3>
                 </div>
               </>)
