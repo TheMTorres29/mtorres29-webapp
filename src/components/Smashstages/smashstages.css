@@ -82,7 +82,7 @@
 .gallery-icons {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 50%;
     margin: auto;
 }
 
@@ -126,7 +126,9 @@
 
 
 @media screen and (max-width: 960px) {
-    
+    .gallery-icons {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -141,5 +143,9 @@
 
     .main-gallery-title {
         font-size: 100%;
+    }
+
+    .gallery-icons {
+        width: 80%;
     }
 }
