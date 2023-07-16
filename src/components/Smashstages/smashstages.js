@@ -66,7 +66,7 @@ function Smashstages() {
             img: nc,
             title: "Northern Cave"
         },
-    ]
+    ];
 
     const [galleryData, setGalleryData] = useState(galleryStageImgs[0]);
     const handleClick=(index)=> {
@@ -92,14 +92,14 @@ function Smashstages() {
                 <div className="stageimgs-container">
                     <div className="main-gallery">
                         <h2 className="main-gallery-title">{galleryData.title}</h2>
-                        <img className="main-gallery-image" src={galleryData.img} />
+                        <img className="main-gallery-image" alt='main-gallery-img' src={galleryData.img} />
                     </div>
                     <div className="gallery-icons">
                         {
                             galleryStageImgs.map((data,i) => 
                             <>
                                 <div className="stageimg-item">
-                                    <img className="stageimg-img" src={data.icon} onClick={()=>handleClick(i)} />
+                                    <img className="stageimg-img" alt='stage-img' src={data.icon} onClick={()=>handleClick(i)} />
                                 </div>
                             </>)
                         }

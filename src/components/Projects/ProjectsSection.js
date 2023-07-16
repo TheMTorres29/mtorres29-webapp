@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ProjectsSection.css';
 import gitLogo from '../../assets/images/github-mark-white.svg';
 import { Link } from 'react-router-dom';
