@@ -41,6 +41,18 @@
     padding: 0.5%;
     width: 100%;
     margin: 0 auto;
+    animation: tvopen 5s linear forwards;
+}
+@keyframes tvopen {
+    0%{
+        height: 1%;
+    }
+    50%{
+        height: 10%;
+    }
+    100%{
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
