@@ -62,21 +62,33 @@
     border-radius: 5px;
     width: 30%;
     padding: 2%;
-    animation: movedown 1.5s linear forwards;
+    animation: movedown 1s linear forwards;
     opacity: 0;
-
     margin: 0 auto;
     margin-bottom: 10px;
 }
 @keyframes movedown {
     0%{
         opacity: 0;
-        transform: translateY(-30px)
+        transform:translateX(90px);
     }
     100%{
         opacity: 1;
-        transform: translateY(0px);
+        transform:translateX(0px);
     }
+}
+
+.project-modules-item:nth-child(1) {
+    animation-delay: 0s;
+}
+.project-modules-item:nth-child(2) {
+    animation-delay: 1s;
+}
+.project-modules-item:nth-child(3) {
+    animation-delay: 2s;
+}
+.project-modules-item:nth-child(4) {
+    animation-delay: 3s;
 }
 
 .proj-img-box {

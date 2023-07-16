@@ -1,6 +1,7 @@
 .hero-video-container {
     width: 100vw;
     height: 100vh;
+    background-color: #080707;
 }
       
 .hero-iframe {
@@ -59,7 +60,7 @@
     text-align: center;
     z-index: 1;
     -webkit-text-stroke: 0;
-    animation: movedown 2s linear forwards;
+    animation: comedown 1.2s forwards linear;
 }
 
 .hero-text > p {
@@ -69,13 +70,13 @@
     margin-top: 8px;
     z-index: 1;
     -webkit-text-stroke: 0;
-    animation: movedown 2s linear forwards;
+    animation: comedown 1.2s forwards linear;
 
 }
-@keyframes movedown {
+@keyframes comedown {
     0%{
         opacity: 0;
-        transform: translateY(-30px)
+        transform: translateY(-50px)
     }
     100%{
         opacity: 1;
