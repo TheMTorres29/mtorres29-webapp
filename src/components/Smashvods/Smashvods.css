@@ -120,11 +120,12 @@
 @media screen and (max-width: 768px) {
   .smashvod-title {
     font-size: x-large;
+    margin-bottom: 2%;
   }
 
   .video-title {
     line-height: 100%;
-    height: 48px;
+    height: auto;
     font-size: large;
   }
 

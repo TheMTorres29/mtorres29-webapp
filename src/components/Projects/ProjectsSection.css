@@ -1,7 +1,7 @@
 .projects-container {
     position: relative;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: auto;
     background-color: #080707;
 }
 
@@ -20,8 +20,7 @@
 .git-container {
     position: relative;
     display: flex;
-    border: #fff solid 2px;
-    max-width: 250px;
+    max-width: 220px;
     border-radius: 5px;
     padding: 1%;
     margin: 1% auto;
@@ -29,7 +28,11 @@
 
 .git-link {
     position: relative;
-    width: fit-content;
+    width: 50%;
+}
+
+.git-link:hover {
+    opacity: 85%;
 }
 
 .git-logo {
@@ -40,8 +43,10 @@
 }
 
 .git-desc {
-    padding: 2%;
-    font-size: 29px;
+    padding-top: 10%;
+    padding-left: 5%;
+    font-size: 25px;
+    width: 50%;
     color: #fff;
     text-align: center;
 }
@@ -128,8 +133,7 @@
     }
 
     .project-modules {
-        padding: 3%;
-        margin: 2%;
+        padding: 4%;
     }
 
     .project-modules-item {
@@ -141,11 +145,12 @@
     }
 
     .git-container {
-        max-width: 170px;
+        max-width: 120px;
     }
 
     .git-desc {
-        font-size: 20px;
-        margin-top: 6px;
+        font-size: 18px;
+        padding-top: 5%;
+        padding-left: 5%;
     }
 }

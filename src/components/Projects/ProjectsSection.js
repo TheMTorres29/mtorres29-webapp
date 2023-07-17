@@ -22,7 +22,7 @@ function ProjectsSection() {
       icon: tpi,
       link: 'https://github.com/TheMTorres29/TropaMagicaGameBuild/releases',
       title: 'Tropa Magica Game v.5',
-      desc: 'First Unity game O built for Game Design course.',
+      desc: 'First Unity game I built for Game Design course.',
     },
     {
       icon: yti,
