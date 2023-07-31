@@ -6,6 +6,11 @@ function Smashvods() {
     const videoGallery = [
         {
             img: '',
+            title: 'ITTD #57: 1MFG Skill (CFalcon) vs MTorres29 (Banjo)',
+            source: 'https://www.youtube.com/embed/_XKTgwmi8Og',
+        },
+        {
+            img: '',
             title: 'GLS Jabroni Jamboree 3: MTorres29 (Banjo) vs Piston (Roy)',
             source: 'https://www.youtube.com/embed/SNRI8HDgPD4',
         },
