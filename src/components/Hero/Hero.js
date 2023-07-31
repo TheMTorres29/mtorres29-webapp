@@ -1,8 +1,6 @@
 import React from 'react';
 import '../../App';
 import './Hero.css';
-import ContactModal from '../ContactModal/ContactModal';
-import ContactBtn from '../Button/Button';
 
 const videoLinks = ["https://player.vimeo.com/video/819314703?h=e34632707f&background=1&autoplay=1&quality=720p",
                     "https://player.vimeo.com/video/819312432?h=df2ca32b36&background=1&autoplay=1&quality=720p"
@@ -23,9 +21,7 @@ function Hero() {
         <div className='hero-text'>
           <h1>Miguel Torres</h1>
           <p>SoCal Web Developer / <br /> Banjo Main</p>
-
         </div>
-        
     </div>
   )
 }
