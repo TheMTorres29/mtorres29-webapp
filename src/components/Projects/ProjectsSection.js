@@ -7,6 +7,7 @@ import mti from '../../assets/images/projects/MT29WebApp-Icon.png';
 import tpi from '../../assets/images/projects/TMAGame-Icon.png';
 import yti from '../../assets/images/projects/YTMP3-Icon.png';
 import fsi from '../../assets/images/projects/FS-Icon.png';
+import pai from '../../assets/images/projects/PAPI-Icon.png';
 
 
 function ProjectsSection() {
@@ -36,6 +37,12 @@ function ProjectsSection() {
       component: { fightstickPage },
       title: 'Custom Fightstick',
       desc: 'Custom universal fightstick I built to use when I play fighting games.',
+    },
+    {
+      icon: pai,
+      link: 'https://main.d16ww3v6ju91ii.amplifyapp.com/',
+      title: 'PokeAPI Practice',
+      desc: 'ReactJS App to practice fetching data from PokeAPI',
     },
   ]
 
