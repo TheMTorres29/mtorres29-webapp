@@ -7,7 +7,7 @@ function Smashvods() {
         {
             img: '',
             title: 'GLS #101 ASLphoenix (Link) Vs MTorres (Banjo)',
-            source: 'https://www.youtube.com/watch?v=DINxOtDnhqs',
+            source: 'https://www.youtube.com/embed/DINxOtDnhqs',
         },
         {
             img: '',
