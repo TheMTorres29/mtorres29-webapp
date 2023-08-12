@@ -6,6 +6,11 @@ function Smashvods() {
     const videoGallery = [
         {
             img: '',
+            title: 'GLS #101 ASLphoenix (Link) Vs MTorres (Banjo)',
+            source: 'https://www.youtube.com/watch?v=DINxOtDnhqs',
+        },
+        {
+            img: '',
             title: 'ITTD #57: 1MFG Skill (CFalcon) vs MTorres29 (Banjo)',
             source: 'https://www.youtube.com/embed/_XKTgwmi8Og',
         },
