@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     background-color: #080707;
+    overflow-x: hidden;
 }
 
 .projectsection-title {
