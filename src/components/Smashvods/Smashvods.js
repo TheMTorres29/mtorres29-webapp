@@ -6,6 +6,11 @@ function Smashvods() {
     const videoGallery = [
         {
             img: '',
+            title: 'ITTD #59: Tobyo vs MTorres (Banjo)',
+            source: 'https://www.youtube.com/embed/Tsy2F8e7V3Y',
+        },
+        {
+            img: '',
             title: 'GLS #101 ASLphoenix (Link) Vs MTorres (Banjo)',
             source: 'https://www.youtube.com/embed/DINxOtDnhqs',
         },
