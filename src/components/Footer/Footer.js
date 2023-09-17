@@ -30,7 +30,7 @@ function Footer({setIsModalOpen}) {
 
             {/* Column 2 */}
             <div className="col">
-                <h4 className="footer-title">Links</h4>
+                <h4 className="footer-title">Work</h4>
                 <ul className="footer-list">
                     <li className="footer-item">
                         <a href="https://www.linkedin.com/in/mtorres29/">

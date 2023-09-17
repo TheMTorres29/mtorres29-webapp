@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from "react-intersection-observer";
 import './Timeline.css';
 import chs from '../../assets/images/timeline/chs.png';
 import sg from '../../assets/images/timeline/sg.png';
@@ -10,11 +11,13 @@ import z from '../../assets/images/timeline/z.png';
 
 
 function Timeline() {
+    const [ref, inView] = useInView({ threshold: 0.001 })
+
   return (
     <div className='timeline-container'>
         <h1 className="timeline-title">Timeline</h1>
-        <div className="timeline">
-            <div className="timeline-item left-container">
+        <div ref={ref} className="timeline">
+            <div className={inView ? "timeline-item left-container":null}>
                 <img src={ chs } alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Corona High School</h2>
@@ -46,7 +49,7 @@ function Timeline() {
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>La Cenaduria</h2>
                     <h3 className='timeline-item-date'>Jan 2015 - present</h3>
-                    <p className='timeline-item-desc'>IT Technician</p>
+                    <p className='timeline-item-desc'>IT / Help Desk</p>
                     <span className="right-arrow"></span>
                 </div>
             </div>
@@ -71,9 +74,9 @@ function Timeline() {
             <div className="timeline-item left-container">
                 <img src={ z } alt="company-logo" />
                 <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>Zumiez DTG</h2>
+                    <h2 className='timeline-item-title'>Zumiez</h2>
                     <h3 className='timeline-item-date'>Oct 2022 - present</h3>
-                    <p className='timeline-item-desc'>Operator/Technician</p>
+                    <p className='timeline-item-desc'>DTG Operator / Technician / Quality Control</p>
                     <span className="left-arrow"></span>
                 </div>
             </div>
