@@ -11,14 +11,12 @@ import z from '../../assets/images/timeline/z.png';
 
 
 function Timeline() {
-    const [ref, inView] = useInView({ threshold: 0.001 })
-
   return (
     <div className='timeline-container'>
         <h1 className="timeline-title">Timeline</h1>
-        <div ref={ref} className="timeline">
-            <div className={inView ? "timeline-item left-container":null}>
-                <img src={ chs } alt="company-logo" />
+        <div className="timeline">
+            <div className="timeline-item left-container">
+                <img src={ chs } className="timeline-logo" alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Corona High School</h2>
                     <h3 className='timeline-item-date'>2014</h3>
@@ -27,7 +25,7 @@ function Timeline() {
                 </div>
             </div>
             <div className="timeline-item right-container">
-                <img src={ sg } alt="company-logo" />
+                <img src={ sg } className="timeline-logo" alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Superior Grocers</h2>
                     <h3 className='timeline-item-date'>Aug 2014 - Jan 2015</h3>
@@ -36,7 +34,7 @@ function Timeline() {
                 </div>
             </div>
             <div className="timeline-item left-container">
-                <img src={ ncc } alt="company-logo" />
+                <img src={ ncc } className="timeline-logo" alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Norco Community College</h2>
                     <h3 className='timeline-item-date'>2014 - 2018</h3>
@@ -45,7 +43,7 @@ function Timeline() {
                 </div>
             </div>
             <div className="timeline-item right-container">
-                <img src={ lc } alt="company-logo" />
+                <img src={ lc } className="timeline-logo" alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>La Cenaduria</h2>
                     <h3 className='timeline-item-date'>Jan 2015 - present</h3>
@@ -54,7 +52,7 @@ function Timeline() {
                 </div>
             </div>
             <div className="timeline-item left-container">
-            <img src={ csusb } alt="company-logo" />
+            <img src={ csusb } className="timeline-logo" alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Cal State University San Bernardino</h2>
                     <h3 className='timeline-item-date'>2018 - 2022</h3>
@@ -63,7 +61,7 @@ function Timeline() {
                 </div>
             </div>
             <div className="timeline-item right-container">
-                <img src={ gs } alt="company-logo" />
+                <img src={ gs } className="timeline-logo" alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>GameStop</h2>
                     <h3 className='timeline-item-date'>Oct 2020 - May 2021</h3>
@@ -72,7 +70,7 @@ function Timeline() {
                 </div>
             </div>
             <div className="timeline-item left-container">
-                <img src={ z } alt="company-logo" />
+                <img src={ z } className="timeline-logo" alt="company-logo" />
                 <div className="timeline-contents">
                     <h2 className='timeline-item-title'>Zumiez</h2>
                     <h3 className='timeline-item-date'>Oct 2022 - present</h3>
