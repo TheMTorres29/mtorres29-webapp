@@ -94,10 +94,7 @@ footer.link {
 }
 
 .footer-icon {
-    max-width: 26px;
-    max-height: 26px;
-    min-width: 20px;
-    min-height: 20px;
+    width: 29px;
     filter: invert(100%) sepia(6%) saturate(5%) hue-rotate(163deg) brightness(99%) contrast(107%);
 }
 
