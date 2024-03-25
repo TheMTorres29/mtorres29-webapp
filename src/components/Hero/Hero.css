@@ -3,49 +3,19 @@
     height: 100vh;
     background-color: #080707;
 }
-      
-.hero-iframe {
-    position: absolute;
-    top: 56.4%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    pointer-events: none;
-    animation: fadein 3s linear forwards;
-}
-@keyframes fadein {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .hero-video-container > iframe {
-      /* height = 100 * (9 / 16) = 56.25 */
-      height: 56.25vw;
-    }
-}
-      
-@media (max-aspect-ratio: 16/9) {
-    .hero-video-container > iframe {
-      /* width = 100 / (9 / 16) = 177.777777 */
-      width: 177.78vh;
-    }
-}
 
 .hero-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgb(0,0,0,0,2);
     object-fit: contain;
     scroll-margin-top: 100px;
+}
+
+.hero-video {
+    margin-left: 50vw;
+    transform: translate(-50%);
 }
 
 .hero-text {
@@ -54,29 +24,32 @@
 }
 
 .hero-text > h1 {
-    color: #1a1717;
-    padding-top: 29px;
+    color: #fff;
+    padding-top: 290px;
     font-size: 100px;
     text-align: center;
     z-index: 1;
     -webkit-text-stroke: 0;
-    animation: comedown 1.2s forwards linear;
+    animation: comedown 1s forwards linear;
 }
 
 .hero-text > p {
-    color: #1a1717;
-    font-size: 32px;
+    color: #fff;
+    font-size: 34px;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 10px;
     z-index: 1;
     -webkit-text-stroke: 0;
-    animation: comedown 1.2s forwards linear;
+    animation: comedown 1s forwards linear;
 
 }
 @keyframes comedown {
     0%{
         opacity: 0;
         transform: translateY(-50px)
+    }
+    80%{
+        transform: translateY(3px)
     }
     100%{
         opacity: 1;
@@ -86,6 +59,7 @@
 
 @media screen and (max-width: 960px) {
     .hero-text > h1 {
+        padding-top: 220px;
         font-size: 70px;
         text-align: center;
     }
@@ -96,28 +70,14 @@
         padding-top: 49%;
         margin: 1%;
         font-size: 50px;
-        color: #fff;
         text-align: center;
         -webkit-text-stroke-width: 0;
     }
 
     .hero-text > p {
         font-size: 29px;
-        color: #fff;
         text-align: center;
         padding: 0% 2%;
         -webkit-text-stroke: 0;
-    }
-
-    .hero-iframe {
-        display: none;
-    }
-
-    .hero-video-container {
-        background-color: black;
-        background-image: url("../../assets/images/fdbg.gif");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 }

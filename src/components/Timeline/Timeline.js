@@ -1,83 +1,43 @@
-import React from 'react';
-import { useInView } from "react-intersection-observer";
+import { useEffect } from 'react';
 import './Timeline.css';
-import chs from '../../assets/images/timeline/chs.png';
-import sg from '../../assets/images/timeline/sg.png';
-import ncc from '../../assets/images/timeline/ncc.png';
-import lc from '../../assets/images/timeline/lc.png';
-import gs from '../../assets/images/timeline/gs.png';
-import csusb from '../../assets/images/timeline/csusb.png';
-import z from '../../assets/images/timeline/z.png';
+import TimelineItem from '../TimelineItem/TimelineItem';
+import Aos from 'aos';
 
 
 function Timeline() {
+
+    // TimelineList List lol
+    const timelineList = [
+        {id:1, ttitle:'Corona High School', tdate:'2014', ticon:'https://drive.google.com/thumbnail?id=1Dw6wTrUaiwHV5JAzZfme8JO_EJBhgRkb', tdesc:'Graduated'},
+        {id:2, ttitle:'Superior Grocers', tdate:'Aug 2014 - Jan 2015', ticon:'https://drive.google.com/thumbnail?id=1B0wnbfmsLd-uPG07gPweWhnggBNadF-e', tdesc:'Sales Associate'},
+        {id:3, ttitle:'Norco Community College', tdate:'2014 - 2018', ticon:'https://drive.google.com/thumbnail?id=12sGFs3mxArHew0KawayCiFY20xr_BK1V', tdesc:'Associates of Math and Science'},
+        {id:4, ttitle:'La Cenaduria', tdate:'Jan 2015 - Present', ticon:'https://drive.google.com/thumbnail?id=148PWsoDXukDYliUX4jV0Nfit352JNtJx', tdesc:'IT / Help Desk'},
+        {id:5, ttitle:'Cal State University San Bernardino', tdate:'2018 - 2022', ticon:'https://drive.google.com/thumbnail?id=1CMheUs0GA-IEhykYB3d6N1kdq95WvstA', tdesc:'Bachelor of Science in Computer Science'},
+        {id:6, ttitle:'GameStop', tdate:'Oct 2020 - May 2021', ticon:'https://drive.google.com/thumbnail?id=1BFft1N-g4A96n6CvwX6h57IqT_XT4AJg', tdesc:'Senior Game Advisor'},
+        {id:7, ttitle:'Zumiez DTG', tdate:'Oct 2022 - Oct 2023', ticon:'https://drive.google.com/thumbnail?id=1BdqPJC4yxn6LDJiX5dfdD-GnnXhfx1Xh', tdesc:''},
+        {id:8, ttitle:"Sam's Club", tdate:'Oct 2023 - Present', ticon:'https://drive.google.com/thumbnail?id=1aJeaJyTCDHCSO-PNB03nOS7VbmYKStRk', tdesc:'Fresh Dept. Associate'},
+    ]
+
+    useEffect(() => {
+        Aos.init({duration: 1000});
+    }, []);
+
   return (
     <div className='timeline-container'>
         <h1 className="timeline-title">Timeline</h1>
+        {/* NEW */}
         <div className="timeline">
-            <div className="timeline-item left-container">
-                <img src={ chs } className="timeline-logo" alt="company-logo" />
-                <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>Corona High School</h2>
-                    <h3 className='timeline-item-date'>2014</h3>
-                    <p className='timeline-item-desc'></p>
-                    <span className="left-arrow"></span>
-                </div>
-            </div>
-            <div className="timeline-item right-container">
-                <img src={ sg } className="timeline-logo" alt="company-logo" />
-                <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>Superior Grocers</h2>
-                    <h3 className='timeline-item-date'>Aug 2014 - Jan 2015</h3>
-                    <p className='timeline-item-desc'>Sales Associate</p>
-                    <span className="right-arrow"></span>
-                </div>
-            </div>
-            <div className="timeline-item left-container">
-                <img src={ ncc } className="timeline-logo" alt="company-logo" />
-                <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>Norco Community College</h2>
-                    <h3 className='timeline-item-date'>2014 - 2018</h3>
-                    <p className='timeline-item-desc'>Associates of Math and Science</p>
-                    <span className="left-arrow"></span>
-                </div>
-            </div>
-            <div className="timeline-item right-container">
-                <img src={ lc } className="timeline-logo" alt="company-logo" />
-                <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>La Cenaduria</h2>
-                    <h3 className='timeline-item-date'>Jan 2015 - present</h3>
-                    <p className='timeline-item-desc'>IT / Help Desk</p>
-                    <span className="right-arrow"></span>
-                </div>
-            </div>
-            <div className="timeline-item left-container">
-            <img src={ csusb } className="timeline-logo" alt="company-logo" />
-                <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>Cal State University San Bernardino</h2>
-                    <h3 className='timeline-item-date'>2018 - 2022</h3>
-                    <p className='timeline-item-desc'>Bachelor of Science in Computer Science w/ a cumulative GPA of 3.14</p>
-                    <span className="left-arrow"></span>
-                </div>
-            </div>
-            <div className="timeline-item right-container">
-                <img src={ gs } className="timeline-logo" alt="company-logo" />
-                <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>GameStop</h2>
-                    <h3 className='timeline-item-date'>Oct 2020 - May 2021</h3>
-                    <p className='timeline-item-desc'>Senior Game Advisor</p>
-                    <span className="right-arrow"></span>
-                </div>
-            </div>
-            <div className="timeline-item left-container">
-                <img src={ z } className="timeline-logo" alt="company-logo" />
-                <div className="timeline-contents">
-                    <h2 className='timeline-item-title'>Zumiez</h2>
-                    <h3 className='timeline-item-date'>Oct 2022 - present</h3>
-                    <p className='timeline-item-desc'>DTG Operator / Technician / Quality Control</p>
-                    <span className="left-arrow"></span>
-                </div>
-            </div>
+            {timelineList.map((timelineList) => {
+                return (
+                    <TimelineItem 
+                        key={timelineList.id}
+                        icon={timelineList.ticon}
+                        title={timelineList.ttitle}
+                        date={timelineList.tdate}
+                        desc={timelineList.tdesc}
+                    />
+                )
+            })}
         </div>
         
     </div>
