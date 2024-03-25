@@ -5,7 +5,7 @@
     font-family: 'Orbitron', sans-serif;
   }
 
-  body {
+  html, body {
     overflow-x: hidden;
   }
 
