@@ -12,6 +12,7 @@ function Hero() {
             autoPlay={true}
             muted={true}
             loop={true}
+            controls={false}
             className='hero-video'>
           </video>
         </div>
