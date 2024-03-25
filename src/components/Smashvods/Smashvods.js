@@ -6,6 +6,11 @@ function Smashvods() {
     const videoGallery = [
         {
             img: '',
+            title: 'GLS Jabroni Jamboree 4: MTorres29 (Banjo) vs Jotorr (Shulk)',
+            source: 'https://www.youtube.com/embed/eg4MJEQeZHk',
+        },
+        {
+            img: '',
             title: 'ITTD #59: Tobyo vs MTorres (Banjo)',
             source: 'https://www.youtube.com/embed/Tsy2F8e7V3Y',
         },
@@ -64,18 +69,17 @@ function Smashvods() {
         <div className="yt-video-gallery">
             <div className="yt-video-container">
                 <div className="video-container">
-                    <iframe className='yt-video-iframe' width="560" height="315" src={ytgalleryData.source} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe className='yt-video-iframe' width="560" height="315" src={ytgalleryData.source} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 <h1 className="video-title">{ytgalleryData.title}</h1>
             </div>
             <div className="vod-list-container">
                 {
-                    videoGallery.map((data,i) => 
-                    <>
-                        <div className="vod-list-item">
+                    videoGallery.map((data, i) => 
+                        <div className="vod-list-item" key={data.title}>
                             <h3 className="vod-selection" alt='vod-icon' src={data.img} onClick={()=>handleClick(i)}>{data.title}</h3>
                         </div>
-                    </>)
+                    )
                 }
                 <h3 className="vod-soon">more soon</h3>
             </div>

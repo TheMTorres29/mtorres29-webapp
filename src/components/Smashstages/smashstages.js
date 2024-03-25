@@ -96,12 +96,11 @@ function Smashstages() {
                     </div>
                     <div className="gallery-icons">
                         {
-                            galleryStageImgs.map((data,i) => 
-                            <>
-                                <div className="stageimg-item">
+                            galleryStageImgs.map((data, i) => 
+                                <div className="stageimg-item" key={data.icon}>
                                     <img className="stageimg-img" alt='stage-img' src={data.icon} onClick={()=>handleClick(i)} />
                                 </div>
-                            </>)
+                            )
                         }
                     </div>
                 </div>
