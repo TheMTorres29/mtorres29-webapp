@@ -117,10 +117,6 @@
         padding: 20px;
     }
 
-    .timeline {
-        width: 100%;
-    }
-
     .timeline-contents {
         padding: 3% 4%;
     }
@@ -129,22 +125,34 @@
        left: 20px; 
     }
 
-    .right-container {
-        left: 0;
+    .timeline-item {
+        position: relative;
+        width: 85vw;
+        margin: 40px;
+        opacity: 1;
+        z-index: 2;
     }
 
-    .timeline-item {
-        left: 20px;
+    .timeline-contents {
+        margin: 4%;
+    }
+
+    .timeline-item img {
+        right: 100%
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0px;
+    }
+
+    .timeline-item:nth-child(even) img {
+        left: -40px;
     }
 
     .left-arrow {
         border-right: 15px solid #fff;
         border-left:0;
         left: -15px;
-    }
-
-    .left-container img {
-        left: -60px
     }
 
 }

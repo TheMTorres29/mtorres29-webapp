@@ -1,4 +1,5 @@
 .footer-container {
+    width: 100vw;
     position: relative;
     background: linear-gradient(90deg, #1c1b1b 0%, #1a1717 100%);
 }
