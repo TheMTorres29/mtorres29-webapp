@@ -34,7 +34,7 @@ function Footer({setIsModalOpen}) {
                     <li className='footer-item'>
                         <a href="https://github.com/TheMTorres29">
                             <h4>GitHub</h4>
-                            <img src='https://drive.google.com/thumbnail?id=10-06hP8plHj-YmamUzI2RMm2luI7ga4j&export=download' alt="logo-icon" className="footer-icon" />
+                            <img src='https://icons8.com/icon/62856/github' alt="logo-icon" className="footer-icon" />
                         </a>
                     </li>
                 </ul>
@@ -45,16 +45,9 @@ function Footer({setIsModalOpen}) {
                 <h4 className="footer-title">Social Media</h4>
                 <ul className="footer-list">
                     <li className="footer-item">
-                        <a href="https://twitter.com/TheMTorres29">
-                            <h4>X</h4>
-                            <img src='https://img.icons8.com/ios-filled/50/twitterx--v1.png' alt="logo-icon" className="footer-icon" />
-                        </a>
-                        
-                    </li>
-                    <li className="footer-item">
                         <a href="https://www.twitch.tv/mtorres29">
                             <h4>Twitch</h4>
-                            <img src='https://drive.google.com/thumbnail?id=1RyNcq9424hTS1yhHvCwCFUELNmGQjDyc&export=download' alt="logo-icon" className="footer-icon" />
+                            <img src='https://img.icons8.com/ios-filled/50/twitch.png' alt="logo-icon" className="footer-icon" />
                         </a>
                         
                     </li>
