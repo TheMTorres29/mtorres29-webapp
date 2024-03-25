@@ -13,11 +13,6 @@
     scroll-margin-top: 100px;
 }
 
-.hero-video {
-    margin-left: 50vw;
-    transform: translate(-50%);
-}
-
 .hero-text {
     position: absolute;
     z-index: 5;

@@ -5,8 +5,10 @@ function Hero() {
   return (
     <div className='hero-container' id='home'>
         <div className='hero-video-container'>
+  
           <video
             src={starry}
+            type="video/webm"
             autoPlay={true}
             muted={true}
             loop={true}

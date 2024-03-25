@@ -1,5 +1,3 @@
-import 'aos/dist/aos.css'
-
 const TimelineItem = (props) => {
   return (
     <div className='timeline-item' key={props.id} data-aos="fade-up">

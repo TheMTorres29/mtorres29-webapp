@@ -4,7 +4,7 @@ function Aboutme() {
   return (
     <div className='about-container' id='about'>
         <h1 className='about-title'>About Me</h1>
-        <div className="about-description">
+        <div className="about-description" data-aos="flip-up">
             <h3 className="hello">Hello, my name is Miguel Torres</h3>
             <p>
               &emsp; I graduated from Cal State University San Bernardino with a Bachelors in Computer Science. 
