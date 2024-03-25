@@ -1,50 +1,43 @@
-import React from 'react';
+import { useEffect } from 'react';
+import Aos from 'aos';
 import './ProjectsSection.css';
 import gitLogo from '../../assets/images/github-mark-white.svg';
 import { Link } from 'react-router-dom';
 import fightstickPage from '../../pages/Fightstick.js';
-import mti from '../../assets/images/projects/MT29WebApp-Icon.png';
-import tpi from '../../assets/images/projects/TMAGame-Icon.png';
-import yti from '../../assets/images/projects/YTMP3-Icon.png';
-import fsi from '../../assets/images/projects/FS-Icon.png';
-import pai from '../../assets/images/projects/PAPI-Icon.png';
 
 
 function ProjectsSection() {
-
   const projectGallery = [
     {
-      icon: mti,
-      link: 'https://MTorres29.com',
-      title: 'MTorres29 Web App',
-      desc: 'This website is one of my recent projects.',
+      icon: 'https://drive.google.com/thumbnail?id=1wU-jPVm9WqBKH4HIWlF9uiSqDPAqjeOR&export=download',
+      link: 'https://random-smashdown.site',
+      title: 'Random-Smashdown',
+      desc: 'Fighter Randomizer for Super Smash Bros Ultimate',
     },
     {
-      icon: tpi,
+      icon: 'https://drive.google.com/thumbnail?id=1i6Pb2SYeFOuiehyGQXEx6IpEs3919xzv&export=download',
       link: 'https://github.com/TheMTorres29/TropaMagicaGameBuild/releases',
       title: 'Tropa Magica Game v.5',
       desc: 'First Unity game I built for Game Design course.',
     },
     {
-      icon: yti,
+      icon: 'https://drive.google.com/thumbnail?id=1tMvN7JdBXRBa6wUGAa2zryRMHHb0VTle&export=download',
       link: 'https://github.com/TheMTorres29/YT-MP3Downloader/releases/tag/YT-MP3',
       title: 'YT-MP3Downloader v.5',
       desc: 'YouTube to MP3 Downloader I made using Python.',
     },
     {
-      icon: fsi,
+      icon: 'https://drive.google.com/thumbnail?id=1MgjusYrMT7GXVgv4bxvEzBdw5YFoIp8o&export=download',
       link: 'fightstick',
       component: { fightstickPage },
       title: 'Custom Fightstick',
       desc: 'Custom universal fightstick I built to use when I play fighting games.',
     },
-    {
-      icon: pai,
-      link: 'https://main.d16ww3v6ju91ii.amplifyapp.com/',
-      title: 'PokeAPI Practice',
-      desc: 'ReactJS App to practice fetching data from PokeAPI',
-    },
   ]
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+}, []);
 
   return (
     <div className='projects-container'>
@@ -58,17 +51,16 @@ function ProjectsSection() {
         
         <div className="project-modules">
           {
-            projectGallery.map((data,i) => 
-              <>
-                <div className="project-modules-item">
+            projectGallery.map((data, i) => 
+                <div className="project-modules-item" key={data.title} data-aos="flip-up">
                   <div className="proj-img-box">
-                    <img className="proj-img" src={data.icon} alt=''/>
+                    <img className="proj-img" src={data.icon} alt='proj-preview'/>
                   </div>
                   <h2 className="proj-title">{data.title}</h2>
                   <Link to={data.link} component={data.component} className="proj-link">Click Here</Link>
                   <h3 className="proj-desc">{data.desc}</h3>
                 </div>
-              </>)
+              )
           }
         </div>
     </div>
