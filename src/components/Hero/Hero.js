@@ -8,11 +8,12 @@ function Hero() {
   
           <video
             src={starry2}
-            type="video/webm"
+            type="video/mp4"
             autoPlay={true}
             muted={true}
             loop={true}
             controls={false}
+            playsInline={true}
             className='hero-video'>
           </video>
         </div>
