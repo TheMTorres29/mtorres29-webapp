@@ -1,5 +1,5 @@
 import './Hero.css';
-import starry from '../../assets/images/StarfieldLoop.webm';
+import starry2 from '../../assets/videos/StarfieldLoop.mp4';
 
 function Hero() {
   return (
@@ -7,7 +7,7 @@ function Hero() {
         <div className='hero-video-container'>
   
           <video
-            src={starry}
+            src={starry2}
             type="video/webm"
             autoPlay={true}
             muted={true}
