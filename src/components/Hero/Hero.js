@@ -8,10 +8,11 @@ function Hero() {
   
           <video
             src={starry2}
-            type="video/mp4"
+            type='video/mp4'
             autoPlay={true}
             muted={true}
             loop={true}
+            height='100%'
             controls={false}
             playsInline={true}
             className='hero-video'>
