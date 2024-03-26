@@ -58,7 +58,6 @@ function Smashvods() {
 
     const [ytgalleryData, setYTGalleryData] = useState(videoGallery[0]);
     const handleClick=(index)=> {
-        // console.log(index);
         const gallery=videoGallery[index];
         setYTGalleryData(gallery);
     };

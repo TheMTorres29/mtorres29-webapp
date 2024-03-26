@@ -9,9 +9,9 @@ function Hero() {
           <video
             src={starry2}
             type='video/mp4'
-            autoPlay={true}
-            muted={true}
-            loop={true}
+            autoPlay
+            muted
+            loop
             height='100%'
             controls={false}
             playsInline={true}
