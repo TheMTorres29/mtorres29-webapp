@@ -1,6 +1,4 @@
-import React from 'react';
 import '../App.js';
-import 'aos/dist/aos.css';
 import Hero from '../components/Hero/Hero.js';
 import Aboutme from '../components/Aboutme/Aboutme.js';
 import Timeline from '../components/Timeline/Timeline.js';

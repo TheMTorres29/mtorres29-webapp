@@ -1,0 +1,52 @@
+.smash-section-container {
+    height: 100vh;
+    /* display: flex; */
+    padding: 1.5%;
+    background-color: #080707;
+    /* background-image: url('../../assets/images/stoneback.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.smash-section-title {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.smash-section-title h1 {
+    color: #fff;
+    text-align: center;
+}
+
+
+.smash-links-container {
+    display: flex;
+}
+
+.smash-link {
+    display: flex;
+    width: 100%;
+    height:min-content;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+.smash-link:hover {
+    background-color: #395999;
+}
+
+.smash-link-title {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    padding-bottom: 5%;
+}
+
+.smash-link-img {
+    width: 100%;
+    padding: 5% 0 5% 0;
+}

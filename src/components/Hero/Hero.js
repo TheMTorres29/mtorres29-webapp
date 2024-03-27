@@ -12,7 +12,7 @@ function Hero() {
             autoPlay
             muted
             loop
-            height='100%'
+            
             controls={false}
             playsInline={true}
             className='hero-video'>
