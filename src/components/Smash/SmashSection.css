@@ -24,11 +24,12 @@
 
 .smash-links-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .smash-link {
     display: flex;
-    width: 100%;
+    width: 30%;
     height:min-content;
     padding: 1%;
     margin: 0 auto;
