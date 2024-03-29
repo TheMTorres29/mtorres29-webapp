@@ -17,33 +17,31 @@ const SmashSection = () => {
     }, []);
   return (
     <div className='smash-section-container'>
-        <div className="smash-section-title">
-            <h1>Smash Section  [WIP]</h1>
-        </div>
+        <h1 className="smash-section-title">Smash Section  [WIP]</h1>
 
         <div className="smash-links-container">
             <div className='smash-link' data-aos="flip-up">
-                <Link to={'smash-mods'} component={''} className="proj-link">
-                    <img src={sMods} alt="" className='smash-link-img' />
-                    <h2 className='smash-link-title'>Mods [WIP]</h2>
-                </Link>
-            </div>
-            <div className='smash-link' data-aos="flip-up">
-                <Link to={'https://smashdata.gg/smash/5/player/MTorres29?id=1103167'} className="proj-link">
+                <Link to={'https://smashdata.gg/smash/5/player/MTorres29?id=1103167'} className="link-container">
                     <img src={sProf} alt="" className='smash-link-img' />
                     <h2 className='smash-link-title'>Profile / Records</h2>
                 </Link>
             </div>
             <div className='smash-link' data-aos="flip-up">
-                <Link to={'smash-stages'} component={ Smashstages } className="proj-link">
+                <Link to={'smash-stages'} component={ Smashstages } className="link-container">
                     <img src={sStage} alt="" className='smash-link-img' />
                     <h2 className='smash-link-title'>Competitive Stages</h2>
                 </Link>
             </div>
             <div className='smash-link' data-aos="flip-up">
-                <Link to={'smash-vods'} component={ Smashvods } className="proj-link">
+                <Link to={'smash-vods'} component={ Smashvods } className="link-container">
                     <img src={sVods} alt="" className='smash-link-img' />
                     <h2 className='smash-link-title'>Vods</h2>
+                </Link>
+            </div>
+            <div className='smash-link' data-aos="flip-up">
+                <Link to={'smash-mods'} component={''} className="link-container">
+                    <img src={sMods} alt="" className='smash-link-img' />
+                    <h2 className='smash-link-title'>Mods [WIP]</h2>
                 </Link>
             </div>
         </div>
