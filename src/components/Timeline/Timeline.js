@@ -14,7 +14,7 @@ function Timeline() {
         {id:4, ttitle:'La Cenaduria', tdate:'Jan 2015 - Present', ticon:'https://drive.google.com/thumbnail?id=148PWsoDXukDYliUX4jV0Nfit352JNtJx', tdesc:'IT / Help Desk'},
         {id:5, ttitle:'Cal State University San Bernardino', tdate:'2018 - 2022', ticon:'https://drive.google.com/thumbnail?id=1CMheUs0GA-IEhykYB3d6N1kdq95WvstA', tdesc:'Bachelor of Science in Computer Science'},
         {id:6, ttitle:'GameStop', tdate:'Oct 2020 - May 2021', ticon:'https://drive.google.com/thumbnail?id=1BFft1N-g4A96n6CvwX6h57IqT_XT4AJg', tdesc:'Senior Game Advisor'},
-        {id:7, ttitle:'Zumiez DTG', tdate:'Oct 2022 - Oct 2023', ticon:'https://drive.google.com/thumbnail?id=1BdqPJC4yxn6LDJiX5dfdD-GnnXhfx1Xh', tdesc:''},
+        {id:7, ttitle:'Zumiez DTG', tdate:'Oct 2022 - Oct 2023', ticon:'https://drive.google.com/thumbnail?id=1BdqPJC4yxn6LDJiX5dfdD-GnnXhfx1Xh', tdesc:'Operator / Quality Control'},
         {id:8, ttitle:"Sam's Club", tdate:'Oct 2023 - Present', ticon:'https://drive.google.com/thumbnail?id=1aJeaJyTCDHCSO-PNB03nOS7VbmYKStRk', tdesc:'Fresh Dept. Associate'},
     ]
 
