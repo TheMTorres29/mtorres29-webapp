@@ -9,6 +9,11 @@
   "background_color": "#ffffff",
   "icons": [
     {
+      "src": "favicon.ico",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
       "src": "72x72.png",
       "sizes": "72x72",
       "type": "image/png"
@@ -51,7 +56,8 @@
     {
       "src": "512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
