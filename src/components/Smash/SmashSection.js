@@ -8,6 +8,7 @@ import sStage from '../../assets/images/smash/stages-icon.png'
 import sVods from '../../assets/images/smash/vods-icon.png'
 import Smashstages from '../Smashstages/smashstages'
 import Smashvods from '../Smashvods/Smashvods'
+import MyMods from '../Mymods/MyMods'
 // import stoneBack from '../../assets/images/stoneback.jpg'
 
 
@@ -17,7 +18,7 @@ const SmashSection = () => {
     }, []);
   return (
     <div className='smash-section-container'>
-        <h1 className="smash-section-title">Smash Section  [WIP]</h1>
+        <h1 className="smash-section-title">Smash Section</h1>
 
         <div className="smash-links-container">
             <div className='smash-link' data-aos="flip-up">
@@ -39,9 +40,9 @@ const SmashSection = () => {
                 </Link>
             </div>
             <div className='smash-link' data-aos="flip-up">
-                <Link to={'smash-mods'} component={''} className="link-container">
+                <Link to={'smash-mods'} component={ MyMods } className="link-container">
                     <img src={sMods} alt="" className='smash-link-img' />
-                    <h2 className='smash-link-title'>Mods [WIP]</h2>
+                    <h2 className='smash-link-title'>Mods</h2>
                 </Link>
             </div>
         </div>

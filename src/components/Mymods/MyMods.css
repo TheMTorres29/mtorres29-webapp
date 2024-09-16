@@ -1,0 +1,97 @@
+.mymods-container {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    display: flex;
+    padding: 1.5%;
+    background-color: #080707;
+    /* background-image: url('../../assets/images/stoneback.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+.mymods-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+}
+
+/* Mod Modules */
+.mod-modules {
+    width: 100% auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.mod-modules-item {
+    border-top: #fff solid 12px;
+    border-bottom: #fff solid 2px;
+    border-left: #fff solid 2px;
+    border-right: #fff solid 2px;
+    border-radius: 5px;
+    width: 85%;
+    height: auto;
+    padding: 2%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #080707;
+}
+
+.mod-img-box {
+    width: 100%;
+}
+
+.mod-img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    border: #fff solid 2px;
+    border-radius: 5px;
+}
+
+.mod-title {
+ color: #fff;
+}
+
+.mod-desc {
+    color: #fff;
+    font-weight: 400;
+}
+
+.mod-link {
+    color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+    .mod-modules-item {
+        width: 80%;
+    }
+
+    .mod-img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modsection-title {
+        font-size: 49px;
+    }
+
+    .mod-modules {
+        padding: 4%;
+    }
+
+    .mod-modules-item {
+        width: 80%;
+    }
+
+    .mod-title {
+        font-weight: 500;
+    }
+}

@@ -1,8 +1,11 @@
 import '../App.js'
+import MyMods from '../components/Mymods'
 
 const SmashMods = () => {
   return (
-    <div>SmashMods</div>
+    <>
+      <MyMods />
+    </>
   )
 }
 
