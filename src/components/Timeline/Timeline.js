@@ -17,6 +17,7 @@ function Timeline() {
         {id:7, ttitle:'Zumiez DTG', tdate:'Oct 2022 - Oct 2023', ticon:'https://drive.google.com/thumbnail?id=1BdqPJC4yxn6LDJiX5dfdD-GnnXhfx1Xh', tdesc:'Operator / Quality Control'},
         {id:8, ttitle:"Sam's Club", tdate:'Oct 2023 - May 2024', ticon:'https://drive.google.com/thumbnail?id=1aJeaJyTCDHCSO-PNB03nOS7VbmYKStRk', tdesc:'Fresh Dept. Associate'},
         {id:9, ttitle:"ProLogistix", tdate:'May 2024 - Present', ticon:'https://drive.google.com/thumbnail?id=1hA_U6w6V04KIn96b7I1zI6aovR0spWXu', tdesc:'Recieving Lead'},
+        {id:10, ttitle:"My Learning Studio", tdate:'October 2024 - Present', ticon:'https://drive.google.com/thumbnail?id=1KhtVcTRniB1WMaJ8UDrM3EXF8bEXEwXk', tdesc:'Academic Tutor'},
     ]
 
     useEffect(() => {
